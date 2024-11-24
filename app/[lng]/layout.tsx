@@ -1,0 +1,80 @@
+import type { Metadata } from 'next'
+import { Roboto, Space_Grotesk as SpaceGrotesk } from 'next/font/google'
+import './globals.css'
+import { ChildProps } from '@/types'
+import { ThemeProvider } from '@/components/providers/theme.provider'
+import { languages } from '@/i18n/settings'
+import { dir } from 'i18next'
+import { ClerkProvider } from '@clerk/nextjs'
+import { localization } from '@/lib/utils'
+import { Toaster } from '@/components/ui/sonner'
+
+const roboto = Roboto({
+	subsets: ['latin', 'cyrillic'],
+	weight: ['100', '300', '400', '500', '700', '900'],
+	variable: '--font-roboto',
+})
+
+const spaceGrotesk = SpaceGrotesk({
+	weight: ['300', '400', '500', '600', '700'],
+	subsets: ['latin'],
+	variable: '--font-space-grotesk',
+})
+
+export async function generateStaticParams() {
+	return languages.map(lng => ({ lng }))
+}
+
+export const metadata: Metadata = {
+	metadataBase: new URL('https://praktikum-3.vercel.app/'),
+	title: 'Khaydarov praktikum | Dasturlash kurslari',
+	description:
+		"Khaydarov Praktikum Next.js dasturlash kurslari, amaliyotlar, startup loyihalar va asosiysi sifatli ta'limdir.",
+	authors: [{ name: 'Samar Badriddinov', url: 'https://praktikum-3.vercel.app/' }],
+	icons: { icon: '/logo.svg' },
+	openGraph: {
+		title: 'Khaydarov praktikum | Dasturlash kurslari',
+		description:
+			"Khaydarov Praktikum Next.js dasturlash kurslari, amaliyotlar, startup loyihalar va asosiysi sifatli ta'limdir.",
+		type: 'website',
+		url: 'https://praktikum-3.vercel.app/',
+		locale: 'uz_UZ',
+		images: 'https://avatars.githubusercontent.com/u/149902818?v=4',
+		countryName: 'Uzbekistan',
+		siteName: 'Khaydarov',
+		emails: 'info@Khaydarov.ac',
+	},
+	keywords:
+		"Praktikum, Praktikum Khaydarov, NextJS, NextJS to'liq kurs, NextJS kurs, NextJS dasturlash, Startup, Startup loyiha, Startup Khaydarov, Khaydarov, Khaydarov praktikum, Khaydarov dasturlash, Khaydarov startup, Khaydarov kurs, Khaydarov kurslari, Khaydarov dasturlash kurslari, Khaydarov startup kurslari, Khaydarov startup loyihalari, Khaydarov startup loyiha, Khaydarov startup loyihasi, Khaydarov startup loyihasi dasturlash",
+}
+
+interface Props extends ChildProps {
+	params: { lng: string }
+}
+
+function RootLayout({ children, params: { lng } }: Props) {
+	const local = localization(lng)
+
+	return (
+		<ClerkProvider localization={local}>
+			<html lang={lng} dir={dir(lng)} suppressHydrationWarning>
+				<body
+					className={`${roboto.variable} ${spaceGrotesk.variable} custom-scrollbar overflow-x-hidden`}
+					suppressHydrationWarning
+				>
+					<ThemeProvider
+						attribute='class'
+						defaultTheme='system'
+						enableSystem
+						disableTransitionOnChange
+					>
+						<Toaster position='top-center' />
+						<div>{children}</div>
+					</ThemeProvider>
+				</body>
+			</html>
+		</ClerkProvider>
+	)
+}
+
+export default RootLayout
