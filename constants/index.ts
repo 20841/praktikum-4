@@ -8,7 +8,7 @@ import {
 	ListVideo,
 	MessageSquareMore,
 	MonitorPlay,
-	// Rss,
+	Rss,
 	Settings2,
 	User,
 } from 'lucide-react'
@@ -31,7 +31,7 @@ import {
 export const navLinks = [
 	{ route: '', name: 'navLink1', icon: Home },
 	{ route: 'courses', name: 'navLink2', icon: ListVideo },
-	// { route: 'blogs', name: 'navLink3', icon: Rss },
+	{ route: 'blogs', name: 'navLink3', icon: Rss },
 	{ route: 'contacts', name: 'navLink4', icon: Contact },
 ]
 
