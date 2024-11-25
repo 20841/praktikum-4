@@ -46,11 +46,11 @@ function FeaturedCourses({ courses }: Props) {
 					</p>
 				</div>
 
-				<div className='flex items-center gap-1 self-end max-md:mt-4 max-md:w-full max-md:rounded-full max-md:bg-primary max-md:p-2'>
+				<div className='flex items-center gap-1 self-end  max-md:mt-4 max-md:flex-wrap max-md:rounded-full max-md:p-2 '>
 					{filterCourses.map(item => (
 						<Button
 							key={item.name}
-							rounded={'full'}
+							// rounded={'full'}
 							variant={item.name === 'all' ? 'secondary' : 'ghost'}
 							className={cn('font-medium max-md:w-full max-md:bg-secondary')}
 							onClick={() => onUpdateParams(item.name)}
@@ -59,6 +59,21 @@ function FeaturedCourses({ courses }: Props) {
 						</Button>
 					))}
 				</div>
+
+				{/* <div className='flex items-center gap-1 self-end max-md:flex-col max-md:mt-4 max-md:w-full max-md:rounded-full max-md:p-2'>
+					{filterCourses.map(item => (
+						<Button
+							key={item.name}
+							variant={item.name === 'all' ? 'secondary' : 'ghost'}
+							className={cn(
+								'font-medium w-auto max-md:w-full max-md:bg-secondary mb-2'
+							)}
+							onClick={() => onUpdateParams(item.name)}
+						>
+							{t(item.label)}
+						</Button>
+					))}
+				</div> */}
 			</div>
 			<div className='mt-4 flex flex-col space-y-4 md:hidden'>
 				{courses.map(course => (

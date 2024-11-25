@@ -52,7 +52,7 @@ function AllCourses({ result }: Props) {
 					{t('result2')}
 				</h2>
 
-				<div className='flex items-center gap-2'>
+				<div className='flex items-center gap-2 max-md:flex-wrap'>
 					<p>{t('sortBy')}</p>
 
 					<Select onValueChange={onUpdateParams}>

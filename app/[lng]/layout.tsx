@@ -26,24 +26,24 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://praktikum-3.vercel.app/'),
+	metadataBase: new URL('https://praktikum-4.vercel.app/en'),
 	title: 'Khaydarov praktikum | Dasturlash kurslari',
 	description:
 		"Khaydarov Praktikum Next.js dasturlash kurslari, amaliyotlar, startup loyihalar va asosiysi sifatli ta'limdir.",
-	authors: [{ name: 'Samar Badriddinov', url: 'https://praktikum-3.vercel.app/' }],
+	authors: [{ name: 'Samar Badriddinov', url: 'https://praktikum-4.vercel.app/en' }],
 	icons: { icon: '/logo.svg' },
 	openGraph: {
 		title: 'Khaydarov praktikum | Dasturlash kurslari',
 		description:
 			"Khaydarov Praktikum Next.js dasturlash kurslari, amaliyotlar, startup loyihalar va asosiysi sifatli ta'limdir.",
 		type: 'website',
-		url: 'https://praktikum-3.vercel.app/',
+		url: 'https://praktikum-4.vercel.app/en',
 		locale: 'uz_UZ',
 		// images: 'https://avatars.githubusercontent.com/u/149902818?v=4',
 		images: 'https://pedsovet.org/v3/upload/ckeditor/6/images/2017-07-17/1500289040_web-2389250_960_720.jpg',
 		countryName: 'Uzbekistan',
 		siteName: 'Khaydarov',
-		emails: 'info@Khaydarov.ac',
+		emails: 'mirzohaydarov69@gmail.com',
 	},
 	keywords:
 		"Praktikum, Praktikum Khaydarov, NextJS, NextJS to'liq kurs, NextJS kurs, NextJS dasturlash, Startup, Startup loyiha, Startup Khaydarov, Khaydarov, Khaydarov praktikum, Khaydarov dasturlash, Khaydarov startup, Khaydarov kurs, Khaydarov kurslari, Khaydarov dasturlash kurslari, Khaydarov startup kurslari, Khaydarov startup loyihalari, Khaydarov startup loyiha, Khaydarov startup loyihasi, Khaydarov startup loyihasi dasturlash",
