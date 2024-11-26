@@ -72,7 +72,7 @@ function UserBox() {
 				</Link>
 				<DropdownMenuItem
 					asChild
-					className='w-full cursor-pointer text-muted-foreground'
+					className='w-full cursor-pointer bg-red-400'
 				>
 					<SignOutButton>{t('logout')}</SignOutButton>
 				</DropdownMenuItem>

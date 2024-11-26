@@ -75,8 +75,9 @@ function Navbar() {
 					</SignedIn>
 					<SignedOut>
 						<SignInButton mode='modal'>
-							<Button size={'lg'} rounded={'full'} className='hidden md:flex'>
+							<Button size={'lg'} className='hidden md:flex'>
 								{t('logIn')}
+								<LogIn className='size-4'/>
 							</Button>
 						</SignInButton>
 						<SignInButton mode='modal'>
