@@ -1,6 +1,5 @@
 'use client'
 
-import { contactSchema } from '@/lib/validation'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Send } from 'lucide-react'
 import { useState } from 'react'
@@ -12,6 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import useTranslate from '@/hooks/use-translate'
+import { contactSchema } from '@/lib/validation'
 
 function ContactForm() {
 	const [isLoading, setIsLoading] = useState(false)
@@ -28,8 +28,8 @@ function ContactForm() {
 
 	function onSubmit(values: z.infer<typeof contactSchema>) {
 		setIsLoading(true)
-		const telegramBotId = process.env.NEXT_PUBLIC_TETELGRAM_BOT_API!
-		const telegramChatId = process.env.NEXT_PUBLIC_TETELGRAM_CHAT_ID!
+		const telegramBotId = process.env.NEXT_PUBLIC_TELEGRAM_BOT_API!
+		const telegramChatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ADI!
 
 		const promise = fetch(
 			`https://api.telegram.org/bot${telegramBotId}/sendMessage`,
@@ -51,9 +51,9 @@ Message: ${values.message}`,
 			.finally(() => setIsLoading(false))
 
 		toast.promise(promise, {
-			loading: t('loading'),
-			success: t('successfully'),
-			error: t('error'),
+			loading: 'Loading...',
+			success: 'Successfully sent!',
+			error: 'Something went wrong!',
 		})
 	}
 

@@ -17,10 +17,11 @@ async function Page({ params: { lng } }: LngParams) {
 		<>
 			<TopBar label='contacts' />
 			<iframe
-				src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13862.031135909749!2d31.37855353790335!3d30.050683721199444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583db8b5b45af3%3A0xc70430c3420bd837!2sEl%20Mahallawy%20Hypermarket!5e0!3m2!1sru!2seg!4v1708407922577!5m2!1sru!2seg'
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139461.62740957536!2d67.26820571721018!3d39.43100503980739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ccd534309a6fd%3A0x9780b0e7f5091023!2sQaldivayjar!5e0!3m2!1sru!2sru!4v1732638987886!5m2!1sru!2sru"
 				loading='lazy'
 				className='h-96 w-full'
 			/>
+			
 
 			<div className='container mx-auto max-w-6xl'>
 				<div className='mt-6 grid grid-cols-2 gap-4 max-md:grid-cols-1'>
