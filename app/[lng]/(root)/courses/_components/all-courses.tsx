@@ -46,7 +46,7 @@ function AllCourses({ result }: Props) {
 	return (
 		<div className='container mx-auto mt-12 max-w-6xl'>
 			<div className='flex items-center justify-between max-md:flex-col max-md:items-start max-md:space-y-2'>
-				<h2 className='max-md:self-end'>
+				<h2 className='max-md:justify-center'>
 					{t('result1')}{' '}
 					<span className='font-space-grotesk font-bold'>{totalCourses}</span>{' '}
 					{t('result2')}
