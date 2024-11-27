@@ -17,7 +17,7 @@ async function Page() {
 			/>
 
 			<div className='container mx-auto mt-12 min-h-[50vh] max-w-6xl'>
-				<div className='grid grid-cols-2 gap-2'>
+				<div className='grid grid-cols-2 gap-2 max-md:grid-cols-1'>
 					<InstructorForm />
 
 					<Image

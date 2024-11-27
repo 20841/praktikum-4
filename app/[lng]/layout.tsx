@@ -8,6 +8,8 @@ import { dir } from 'i18next'
 import { ClerkProvider } from '@clerk/nextjs'
 import { localization } from '@/lib/utils'
 import { Toaster } from '@/components/ui/sonner'
+import NextTopLoader from 'nextjs-toploader'
+
 
 const roboto = Roboto({
 	subsets: ['latin', 'cyrillic'],
@@ -26,7 +28,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://praktikum-4.vercel.app/en'),
+	metadataBase: new URL('https://praktikum-4.vercel.app/uz'),
 	title: 'Khaydarov praktikum | Dasturlash kurslari',
 	description:
 		"Khaydarov Praktikum Next.js dasturlash kurslari, amaliyotlar, startup loyihalar va asosiysi sifatli ta'limdir.",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
 		description:
 			"Khaydarov Praktikum Next.js dasturlash kurslari, amaliyotlar, startup loyihalar va asosiysi sifatli ta'limdir.",
 		type: 'website',
-		url: 'https://praktikum-4.vercel.app/en',
+		url: 'https://praktikum-4.vercel.app/uz',
 		locale: 'uz_UZ',
 		// images: 'https://avatars.githubusercontent.com/u/149902818?v=4',
 		images: 'https://pedsovet.org/v3/upload/ckeditor/6/images/2017-07-17/1500289040_web-2389250_960_720.jpg',
@@ -69,6 +71,17 @@ function RootLayout({ children, params: { lng } }: Props) {
 						enableSystem
 						disableTransitionOnChange
 					>
+					<NextTopLoader
+							color='#3182CE'
+							initialPosition={0.5}
+							crawlSpeed={200}
+							height={2}
+							crawl={true}
+							showSpinner={false}
+							easing='ease'
+							speed={200}
+							shadow='0 0 10px #3182CE,0 0 5px #3182CE'
+						/>
 						<Toaster position='top-center' />
 						<div>{children}</div>
 					</ThemeProvider>

@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 function Logo() {
 	return (
-		<Link href={'/'} className='flex items-center gap-2'>
+		<Link href={'/'} className='flex items-center gap-1'>
 			<Image src={'/logo.svg'} alt='logo' width={50} height={50} />
-			<h1 className='font-space-grotesk text-4xl font-bold'>Sadiq</h1>
+			<h1 className='font-space-grotesk text-4xl font-bold'>12.Maktab</h1>
 		</Link>
 	)
 }

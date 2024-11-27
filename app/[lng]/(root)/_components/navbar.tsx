@@ -31,15 +31,16 @@ function Navbar() {
 					<div className='hidden items-center gap-3 border-l pl-2 md:flex'>
 						{navLinks.map(nav => (
 							<Link
-								href={`/${nav.route}`}
-								key={nav.route}
-								className={cn(
-									'font-medium transition-all hover:text-blue-500 hover:underline',
-									pathname === `/${lng}/${nav.route}` && 'text-blue-500'
-								)}
-							>
-								{t(nav.name)}
-							</Link>
+							href={`/${nav.route}`}
+							key={nav.route}
+							className={cn(
+								'font-medium transition-all hover:text-blue-500 hover:underline',
+								(nav.route === '' ? `${pathname}/` : pathname) ===
+									`/${lng}/${nav.route}` && 'text-blue-500'
+							)}
+						>
+							{t(nav.name)}
+						</Link>
 						))}
 					</div>
 				</div>

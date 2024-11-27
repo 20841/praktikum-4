@@ -95,7 +95,7 @@ function Description({ course, isPurchase }: Props) {
 				{t('addWishlist')}
 			</Button>
 
-			<p className='my-3 text-center text-sm text-muted-foreground'>
+			<p className='my-3 text-center text-sm text-muted-foreground line-through'>
 				{t('guarantee')}
 			</p>
 
@@ -146,7 +146,7 @@ function Description({ course, isPurchase }: Props) {
 					<GrCertificate className='size-5' />
 					<span className='font-bold'>{t('certificate')}</span>
 				</div>
-				<p className='text-muted-foreground'>{t('yes')}</p>
+				<p className='text-muted-foreground line-through'>{t('yes')}</p>
 			</div>
 
 			<div className='mt-2 flex items-center justify-between border-b pb-2'>
@@ -154,7 +154,7 @@ function Description({ course, isPurchase }: Props) {
 					<Infinity className='size-5' />
 					<span className='font-bold'>{t('fullLifetime')}</span>
 				</div>
-				<p className='text-muted-foreground'>{t('yes')}</p>
+				<p className='text-muted-foreground '>{t('yes')}</p>
 			</div>
 		</div>
 	)

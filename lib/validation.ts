@@ -50,7 +50,8 @@ export const sectionSchema = z.object({
 
 export const lessonSchema = z.object({
 	title: z.string().min(3),
-	videoUrl: z.string().url(),
+	// videoUrl: z.string().url(),
+	videoUrl: z.string(),
 	content: z.string().optional(),
 	hours: z.string(),
 	minutes: z.string(),
