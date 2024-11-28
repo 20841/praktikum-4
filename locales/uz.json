@@ -212,5 +212,21 @@
 	"messageCoursePurchased": "Tabriklaymiz! Siz muvaffaqiyatli kursni sotib olgansiz. Batafsil ma'lumotlar uchun, asosiy panelingizni tekshiring.",
 	"messageCourseSold": "Tabriklaymiz! Sizning kursingiz sotib olindi. Batafsil ma'lumotlar uchun, asosiy panelingizni tekshiring.",
 	"messageSendReview": "Izohingiz uchun rahmat. U tez orada chop etiladi.",
-	"messageUpdateReview": "Sizning izohingiz yangilandi."
+	"messageUpdateReview": "Sizning izohingiz yangilandi.",
+	"freeLessons": "Bepul darslar",
+	"checking": "Tekshirilmoqda",
+	"pleaseWait": "Ma'lumotlaringizni yangilash jarayonida kuting",
+	"notFound": "Bepul dars topilmadi",
+	"conversation": "Muhokama",
+	"generateCode": "Kod yaratish",
+	"generateImage": "Rasm yaratish",
+	"howCanIHelp": "Sizga qanday yordam bera olishim mumkin?",
+	"conversationDescr": "Menga istalgan narsani so'rang va men sizga yordam bera harakat qilib ko'raman. Muhokama maxfiy va xavfsiz. Men hech qanday ma'lumotni saqlamayman. Sizga yordam berish uchun men bu erda.",
+	"conversationPlaceholder": "Doira radiusini qanday hisoblash mumkin?",
+	"codeDescription": "Menga istalgan narsani so'rang va men sizga yordam bera harakat qilib ko'raman. Agar kod yaratishni istasangiz, kerakli ma'lumotlarni taqdim qiling.",
+	"codePlaceholder": "Tasodifiy sonni qanday yaratish mumkin?",
+	"imageDescription": "Menga istalgan narsani so'ragan holda rasm yarating. Men sizga yordam bera harakat qilib ko'raman. Muhokama maxfiy va xavfsiz. Men hech qanday ma'lumotni saqlamayman. Sizga yordam berish uchun men bu erda.",
+	"imagePlaceholder": "Rasm yaratish uchun nima so'ray olishim kerak.",
+	"photo": "Rasmi",
+	"photos": "Rasmlar"
 }

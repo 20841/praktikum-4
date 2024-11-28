@@ -60,16 +60,16 @@ function Footer() {
 								<Mail size={20} />
 								<a
 									className='text-sm hover:text-blue-500 hover:underline dark:hover:text-blue-300'
-									href='mailto:info@sammi.ac'
+									href='mailto:info@khaydarov.ac'
 								>
-									info@sammi.ac
+									info@khaydarov.ac
 								</a>
 							</div>
 
 							<div className='flex items-center space-x-3'>
 								<MapPin size={20} />
 								<span className='text-sm'>
-									Ronda de Elburg 30008 Geleen Niderlandia
+									Urgut Samarkand Uzbekistan
 								</span>
 							</div>
 						</div>

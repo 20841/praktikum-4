@@ -35,7 +35,7 @@ async function Page({ params: { lng } }: LngParams) {
 
 						<div className='mt-12 flex items-center gap-3'>
 							<Mail className='size-4' />
-							<p className='text-sm'>info@sammi.ac</p>
+							<p className='text-sm'>info@khaydarov.ac</p>
 						</div>
 						<div className='mt-2 flex items-center gap-3'>
 							<Phone className='size-4' />

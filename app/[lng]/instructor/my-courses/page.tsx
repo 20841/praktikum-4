@@ -14,7 +14,7 @@ async function Page({ searchParams }: SearchParamsProps) {
 	return (
 		<>
 			<Header title='My courses' description='Here are your latest courses' />
-			<div className='mt-4 grid grid-cols-3 gap-4'>
+			<div className='mt-4 grid grid-cols-3 gap-4 max-md:grid-cols-1'>
 				{result.courses.map(item => (
 					<InstructorCourseCard
 						key={item._id}

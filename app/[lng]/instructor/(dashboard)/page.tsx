@@ -25,7 +25,7 @@ async function Page() {
 		<>
 			<Header title='Dashboard' description='Welcome to your dashboard' />
 
-			<div className='mt-4 grid grid-cols-4 gap-4'>
+			<div className='mt-4 grid grid-cols-3 gap-4 max-md:grid-cols-1'>
 				<StatisticsCard
 					label='Total courses'
 					value={result.totalCourses.toString()}
@@ -56,7 +56,7 @@ async function Page() {
 				description='Here are your latest courses'
 			/>
 
-			<div className='mt-4 grid grid-cols-3 gap-4'>
+			<div className='mt-4 grid grid-cols-3 gap-4 max-md:grid-cols-1'>
 				{result.courses.map(course => (
 					<InstructorCourseCard
 						key={course.title}
@@ -67,7 +67,7 @@ async function Page() {
 
 			<Header title='Reviews' description='Here are your latest reviews' />
 
-			<div className='mt-4 grid grid-cols-3 gap-4'>
+			<div className='mt-4 grid grid-cols-3 gap-4 max-md:grid-cols-1'>
 				{reviews.map(review => (
 					<div className='rounded-md bg-background px-4 pb-4' key={review._id}>
 						<ReviewCard review={JSON.parse(JSON.stringify(review))} />

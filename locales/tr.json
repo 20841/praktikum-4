@@ -212,5 +212,21 @@
 	"messageCoursePurchased": "Tebrikler! Kursu başarıyla satın aldınız. Daha fazla ayrıntı için panelinizi kontrol edin.",
 	"messageCourseSold": "Tebrikler! Kursunuz satıldı. Daha fazla ayrıntı için panelinizi kontrol edin.",
 	"messageSendReview": "İncelemeniz için teşekkür ederiz. Yakında yayınlanacak.",
-	"messageUpdateReview": "İncelemeniz güncellendi."
+	"messageUpdateReview": "İncelemeniz güncellendi.",
+	"freeLessons": "Ücretsiz Dersler",
+	"checking": "Kontrol Ediliyor",
+	"pleaseWait": "Verileriniz yenilenirken lütfen bekleyin",
+	"notFound": "Ücretsiz ders bulunamadı",
+	"conversation": "Konuşma",
+	"generateCode": "Kod Üret",
+	"generateImage": "Resim Üret",
+	"howCanIHelp": "Size nasıl yardımcı olabilirim?",
+	"conversationDescr": "Bana herhangi bir şey sorun ve size yardımcı olmaya çalışayım. Konuşma özel ve güvenlidir. Herhangi bir veri saklamıyorum. Size yardımcı olmak için buradayım.",
+	"conversationPlaceholder": "Bir dairenin yarıçapını nasıl hesaplarım?",
+	"codeDescription": "Bana herhangi bir şey sorun ve size yardımcı olmaya çalışayım. Kod üretmek istiyorsanız, lütfen gerekli bilgileri sağlayın.",
+	"codePlaceholder": "Rastgele bir sayı nasıl üretilir?",
+	"imageDescription": "Bana herhangi bir şey sorarak bir resim oluşturun. Size yardımcı olmaya çalışacağım. Konuşma özel ve güvenlidir. Herhangi bir veri saklamıyorum. Size yardımcı olmak için buradayım.",
+	"imagePlaceholder": "Bir resim oluşturmak için bana ne sorabilirim?",
+	"photo": "Fotoğraf",
+	"photos": "Fotoğraflar"
 }

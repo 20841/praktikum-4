@@ -212,5 +212,21 @@
 	"messageCoursePurchased": "Congratulations! You have successfully purchased the course. Check your dashboard for more details.",
 	"messageCourseSold": "Congratulations! Your course has been sold. Check your dashboard for more details.",
 	"messageSendReview": "Thank you for your review. It will be published shortly.",
-	"messageUpdateReview": "Your review has been updated."
+	"messageUpdateReview": "Your review has been updated.",
+	"freeLessons": "Free lessons",
+	"checking": "Checking",
+	"pleaseWait": "Please wait while we refresh your data",
+	"notFound": "No free lessons found",
+	"conversation": "Conversation",
+	"generateCode": "Generate Code",
+	"generateImage": "Generate Image",
+	"howCanIHelp": "How can I help you?",
+	"conversationDescr": "Ask me anything and I will try to help you. Conversation is private and secure. I do not store any data. I am here to help you.",
+	"conversationPlaceholder": "How do I calculate the radius of a circle?",
+	"codeDescription": "Ask me anything and I will try to help you. If you want to generate code, please provide me with the necessary information.",
+	"codePlaceholder": "How to generate a random number?",
+	"imageDescription": "Generate an image by asking me anything. I'll try my best to help you. Conversation is private and secure. I do not store any data. I am here to help you.",
+	"imagePlaceholder": "Ask me anything to generate an image.",
+	"photo": "Photo",
+	"photos": "Photos"
 }

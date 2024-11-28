@@ -50,7 +50,7 @@ function SecondForm({ onHandler }: Props) {
 								<Input
 									{...field}
 									className='bg-primary/10'
-									placeholder='https://sammi.ac'
+									placeholder='https://praktikum-4.vercel.app/uz'
 								/>
 							</FormControl>
 						</FormItem>
@@ -68,7 +68,7 @@ function SecondForm({ onHandler }: Props) {
 								<Input
 									{...field}
 									className='bg-primary/10'
-									placeholder='https://linkedin.com/in/sammi'
+									placeholder='https://linkedin.com/in/khaydarov'
 								/>
 							</FormControl>
 						</FormItem>
@@ -86,7 +86,7 @@ function SecondForm({ onHandler }: Props) {
 								<Input
 									{...field}
 									className='bg-primary/10'
-									placeholder='https://github.com/sammi'
+									placeholder='https://github.com/khaydarov'
 								/>
 							</FormControl>
 						</FormItem>
@@ -104,7 +104,7 @@ function SecondForm({ onHandler }: Props) {
 								<Input
 									{...field}
 									className='bg-primary/10'
-									placeholder='https://youtube.com/samarbadriddinov'
+									placeholder='https://youtube.com/khaydarov'
 								/>
 							</FormControl>
 						</FormItem>
