@@ -12,7 +12,7 @@ function Logo() {
 				className='max-md:size-12'
 			/>
 				<h1 className='font-space-grotesk text-4xl font-bold max-md:text-2xl'>
-				12.Maktab
+				School
 			</h1>
 		</Link>
 	)
